@@ -187,6 +187,12 @@ addAptSourceList()
   CLOUDPANEL_SOURCE_LIST=$(cat <<-END
 deb https://$ORIGIN/ $OS_CODE_NAME main
 deb https://$ORIGIN/ $OS_CODE_NAME nginx
+deb https://$ORIGIN/ $OS_CODE_NAME php-7.1
+deb https://$ORIGIN/ $OS_CODE_NAME php-7.2
+deb https://$ORIGIN/ $OS_CODE_NAME php-7.3
+deb https://$ORIGIN/ $OS_CODE_NAME php-7.4
+deb https://$ORIGIN/ $OS_CODE_NAME php-8.0
+deb https://$ORIGIN/ $OS_CODE_NAME php-8.1
 deb https://$ORIGIN/ $OS_CODE_NAME php-8.2
 deb https://$ORIGIN/ $OS_CODE_NAME php-8.3
 deb https://$ORIGIN/ $OS_CODE_NAME proftpd
@@ -299,3 +305,5 @@ removeUnnecessaryPackages
 installMySQL
 setupCloudPanel
 cleanUp
+
+systemctl disable php7.*

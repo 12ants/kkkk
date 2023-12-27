@@ -16,6 +16,7 @@ neofetch \
 tlp \
 btop \
 curl \
+jp2a \
 lolcat \
 googler \
 2>/dev/null ;
