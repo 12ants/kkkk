@@ -1,7 +1,7 @@
 #!/bin/bash
 ## " ops=(FIRST SECOND ETC) && source multi "
 function multi {
-ops1=($(ls))
+ops1=($(ls ./in))
 ops=(${ops1[@]/.sh/""})
 clear
 echo "

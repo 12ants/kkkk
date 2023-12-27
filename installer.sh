@@ -1,12 +1,6 @@
 #!/bin/bash
-## written by 12ants.github.io
-#########################
-## -- CUSTOM LINUX --  ##
-#########################
-##
-##
-#!/bin/bash
-########### 12ants.github.com
+## bash installer
+## 12ants.github.com
 unset *; reset; 
 echo -e "\n\n"; ll=$(echo -e " \t\t ");
 if [ $UID != 0 ]; then echo -e " \n\n $ll This script must be run as root... try command: [ sudo -s ] \n\n " 1>&2; read -ep "$ll k" "k7"; exit 1; fi
