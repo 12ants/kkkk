@@ -4,10 +4,6 @@
 ## -- CUSTOM LINUX --  ##
 #########################
 ##
-# case $- in
-# *i*) ;;
-# *) return;;
-# esac
 HISTCONTROL=ignoreboth
 shopt -s histappend
 HISTSIZE=1000
@@ -42,7 +38,7 @@ left2=$(tput cub 2) up1=$(tput cuu1);
 ##
 export c2="$cyan  --$re"; 
 ##
-source /etc/balias.sh 2>/dev/null
+source /etc/aaaa.sh 2>/dev/null
 #dash="$cyan ----------------------------------$re" 
 #ll=$(echo -e "\t\t") \
 ##
