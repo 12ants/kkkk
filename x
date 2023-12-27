@@ -1,10 +1,6 @@
 
-  bash 	 	 -> true
+  apps 	 	 -> true
+  index.html 	 	 -> true
 
  ---- 
 
-bash=true
-bbbb=
-multi=
-opts2=
-x=
