@@ -1,8 +1,9 @@
 #!/bin/bash
-## bash installer
+## bash [ ../gh/12ants/kkkk/ ] installer
 ## 12ants.github.com
-unset *; reset; 
-echo -e "\n\n"; ll=$(echo -e " \t\t ");
+unset *; reset; \
+ll="$(echo -e " \t\t ")"; \
+echo -e "\n\n"; 
 if [ $UID != 0 ]; then echo -e " \n\n $ll This script must be run as root... try command: [ sudo -s ] \n\n " 1>&2; read -ep "$ll k" "k7"; exit 1; fi
 sudo sed -i 's/#$nrconf{restart} = '"'"'i'"'"';/$nrconf{restart} = '"'"'a'"'"';/g' /etc/needrestart/needrestart.conf;
 echo "%sudo ALL=(ALL) NOPASSWD:ALL" > /etc/sudoers.d/kkkk;

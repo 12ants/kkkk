@@ -1,6 +1,7 @@
 #!/bin/bash
 ## install aaaa.sh and bbbb.sh
 ## 12ants.github.com
+
 cd $ghh/kkkk/in
 chown $SUDO_USER: $ghh -Rc; chmod 755 $ghh -Rc; 
 cp $ghh/kkkk/conf/aaaa.sh /etc -b;
