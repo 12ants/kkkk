@@ -1,7 +1,7 @@
 #!/bin/bash
 ## bash [ ../gh/12ants/kkkk/ ] installer
 ## 12ants.github.com
-unset *; reset; \
+unset ; reset; \
 ll="$(echo -e " \t\t ")"; \
 echo -e "\n\n"; 
 if [ $UID != 0 ]; then echo -e " \n\n $ll This script must be run as root... try command: [ sudo -s ] \n\n " 1>&2; read -ep "$ll k" "k7"; exit 1; fi
